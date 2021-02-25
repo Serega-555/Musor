@@ -1,5 +1,8 @@
+# Работа с библиотекой turtle (черепашка)
+
 import turtle as t
 
+# 10 вложенных квадратов.
 # t.penup()
 # x = -25
 # y = -25
@@ -14,51 +17,50 @@ import turtle as t
 #     x -= 10
 #     y -= 10
 #     pix += 50 / 100 * 40
-
-
-
-pix = int(input("Введите длину в пикселях "))
-n = int(input("Введите колличество лапок "))
-grad = 360 / n
-for j in range(n):
-    t.penup()
-    t.goto(0, 0)
-    t.pendown()
-    t.forward(pix)
-    t.stamp()
-    t.left(grad)
-
-
-
-
-
-
-
+#-----------------------------------------------------------
+# Паучек
 # pix = 100
-# t.shape("turtle")
-# t.goto(0, 0)
-# t.forward(pix)
-# t.left(180)
+# n = 15
+# grad = 360 / n
+# for j in range(n):
+#     t.penup()
+#     t.goto(0, 0)
+#     t.pendown()
+#     t.forward(pix)
+#     t.stamp()
+#     t.left(grad)
 
-# t.stamp()
-# t.penup()
-# t.goto(0, 0)
-# t.pendown()
-# t.right(90)
-# t.forward(pix)
-# t.stamp()
+# Паучек второй вариант
+# def square(n):
+    
+#     for j in range(n):
+#         t.goto(n / 2, n / 2)
+#         t.forward(n * 10)
+#         t.left(360 / n)
 
+# square(10)
+#-----------------------------------------------------------
+# Круг
 # t.penup()
+# t.goto(2, 2)
+# n = 100
+# for j in range(n):
+#     t.pendown()
+#     t.forward(360 / n)
+#     t.left(360 / n)
+#-----------------------------------------------------------
+# Спираль
 # t.goto(0, 0)
-# t.pendown()
-# t.left(90)
-# t.forward(pix)
-# t.stamp()
-
-# t.penup()
+# n = 500
+# for j in range(n):
+#     t.forward(j / 15)
+#     t.left(10)
+#-----------------------------------------------------------
+# квадратная «спираль
 # t.goto(0, 0)
-# t.pendown()
-# t.right(90)
-# t.backward(pix)
-# t.stamp()
+# n = 100
+# for j in range(n):
+#     t.forward(j * 3)
+#     t.left(90)
+#-----------------------------------------------------------
 
