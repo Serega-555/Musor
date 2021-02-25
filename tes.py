@@ -5,14 +5,12 @@ import math
 
 
 def square(n, pix):
-    R = math.sin(18)
-    print(math.degrees(R))
-    # R = 40 / (2 * math.sin(math.degrees(360 / (2 * 10))))
+    # R = pix / (2 * math.sin(math.radians(360 / (2 * n))))
     
-#     t.goto(0,0)
-#     for j in range(n):
-#         t.forward(pix)
-#         t.left(360 / n)
+    t.goto(0,0)
+    for j in range(n):
+        t.forward(pix)
+        t.left(360 / n)
         
 
 square(10, 40)
